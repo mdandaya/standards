@@ -1,2 +1,2 @@
 # standards
-Library for standard UI components
+A library for standard UI components.
