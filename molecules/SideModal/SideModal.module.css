@@ -1,0 +1,48 @@
+/* The animation code */
+@keyframes fadeIn {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+.container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: white;
+  min-width: 450px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: none;
+  z-index: 999; /** @todo find out why map divs have higher z-index */
+  overflow: auto;
+}
+
+.shown {
+  display: flex;
+  right: 0;
+  animation: fadeIn;
+  animation-duration: 0.75s;
+}
+
+.hidden {
+  display: flex;
+  right: 100%;
+  animation: fadeOut;
+  animation-duration: 0.75s;
+}

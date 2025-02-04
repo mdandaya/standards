@@ -1,0 +1,41 @@
+.text {
+  white-space: pre-wrap;
+}
+
+.p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.m {
+  font-weight: 500;
+}
+
+.b {
+  font-weight: 600;
+}
+
+.hb {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.gradientPtoP2 {
+  background: linear-gradient(90deg, var(--primary), var(--primary2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientPtoS {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

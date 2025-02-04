@@ -1,0 +1,78 @@
+.button {
+  border: 1px solid white;
+  font: inherit;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 18px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(90deg, var(--primary), var(--primary2));
+  border-color: transparent;
+  color: var(--text-contrast);
+  font-weight: 600;
+}
+
+.button:active {
+  background-color: var(--jade);
+  border-color: var(--jade);
+  color: var(--white);
+}
+
+.light {
+  background-color: var(--mint);
+  border-color: var(--mint);
+  color: var(--forest);
+}
+
+.negative {
+  background-color: #ff4e50;
+  border-color: #ff4e50;
+  color: var(--white);
+}
+
+.negative:active {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: #ff4e50;
+}
+
+.white {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--jade);
+}
+
+.dark {
+  background-color: var(--jade);
+  border-color: var(--jade);
+  color: var(--white);
+}
+
+.dark:active {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--jade);
+}
+
+.disabled,
+.disabled:active {
+  cursor: default;
+  background-color: lightgray;
+  border-color: lightgray;
+  color: gray;
+}
+
+.sand {
+  background-color: var(--sand);
+  color: var(--forest);
+}
+
+.sea {
+  background-color: var(--sea);
+  color: var(--white);
+}

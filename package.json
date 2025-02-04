@@ -1,0 +1,19 @@
+{
+  "name": "@mdandaya/standards",
+  "version": "1.0.1",
+  "description": "A library for standard UI components.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdandaya/standards.git"
+  },
+  "author": "mdandaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdandaya/standards/issues"
+  },
+  "homepage": "https://github.com/mdandaya/standards#readme"
+}

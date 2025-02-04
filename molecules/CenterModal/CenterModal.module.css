@@ -1,0 +1,39 @@
+/* The animation code */
+@keyframes fadeIn {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+.container {
+  width: fit-content;
+  margin: 60px;
+  background-color: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  z-index: 100;
+  position: relative;
+}
+
+.shown {
+  /* animation: fadeIn;
+    animation-duration: 0.5s; */
+}
+
+.hidden {
+  /* animation: fadeOut;
+    animation-duration: 0.5s; */
+}

@@ -1,0 +1,75 @@
+.input {
+  border-radius: 16px;
+  font-family: inherit;
+  color: inherit;
+  line-height: normal;
+  font-size: 15px;
+  padding: 15px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  /* 
+    Code to allow ellipses when not focused. 
+    Requires readOnly instead of disabled prop or you can't read ellipses text 
+  */
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  cursor: text;
+  /* white-space: nowrap;  */
+  font-family: montserrat;
+}
+
+.input:focus {
+  overflow: auto; /* Allows user to scroll on focus */
+  /* white-space: normal;  */
+  /* Changes to allow wrapping */
+}
+
+/* .input select {
+  -webkit-appearance: none;
+} */
+
+.textArea {
+  font-family: inherit;
+  font-family: inherit;
+  /* 
+    Because height of normal input is 50px due to 
+    combination of padding, line height, font size. 
+    Change this as needed */
+  min-height: 50px;
+  height: 125px;
+  resize: vertical;
+  overflow: hidden !important;
+}
+
+.input::placeholder,
+.selectPlaceholder {
+  color: gray;
+  opacity: 1; /* Firefox */
+}
+
+.input::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: gray !important;
+}
+
+.disabled {
+  background-color: #d3d3d325;
+}
+
+.date {
+  /* padding: -1px; */
+}
+
+.hideArrows::-webkit-outer-spin-button,
+.hideArrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.hideArrows[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
